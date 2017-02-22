@@ -1,0 +1,28 @@
+{
+  "name": "full-stack-server",
+  "version": "0.1.0",
+  "description": "koa ",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^1.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "app": "babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincent1988/full-stack-server.git"
+  },
+  "keywords": [
+    "koa",
+    "server"
+  ],
+  "author": "hong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincent1988/full-stack-server/issues"
+  },
+  "homepage": "https://github.com/vincent1988/full-stack-server#readme"
+}
