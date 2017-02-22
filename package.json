@@ -6,7 +6,12 @@
   "dependencies": {
     "koa": "^1.2.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-register": "^6.23.0"
+  },
   "scripts": {
     "app": "babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
