@@ -1,5 +1,6 @@
 import koa from 'koa';
 import Router from 'koa-router';
+import Boom from 'boom';
 
 const app = koa();
 const router = new Router({prefix: '/user'});
@@ -26,11 +27,45 @@ router.get('/', function *(next) {
 	this.body = 'Hello World!';
 }).get('/:path', function *(next) {
 	this.body = this.params.path;
+}).get('/mult/:path', function *() {
+
+}, function *(next) {
+
+}).get('/:category/:title', function *() {
+	console.log(this.params);
 });
+
+
+//use用法
+// router.use(function* (next) {
+//   console.log('aaaaaa');
+//   yield next;
+// });
+//
+// router.get('/test', function *(next) {
+//   console.log('dddddd');
+//   this.response.body = 'test router middleware';
+// });
+//
+// router.use(function* (next) {
+//   console.log('bbbbbb');
+//   yield next;
+// });
+//
+// router.get('/', function *(next) {
+//   console.log('ccccccc');
+//   this.response.body = 'Hello World!';
+// });
+
+
 
 app
 	.use(router.routes())
-	.use(router.allowedMethods());
+	.use(router.allowedMethods({
+		throw: true,
+		notImplemented: () => new Boom.notImplemented(),
+		methodNotAllowed: () => new Boom.methodNotAllowed()
+	}));
 // app.use(function *() {
 //   // this.redirect('http://google.com');
 //   // this.cookie.set('aaa', 'test');
