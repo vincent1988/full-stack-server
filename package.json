@@ -6,6 +6,7 @@
   "dependencies": {
     "boom": "^4.2.0",
     "debug": "^2.6.1",
+    "generic-session": "^0.1.2",
     "koa": "^1.2.5",
     "koa-compress": "^2.0.0",
     "koa-generic-session": "^1.11.5",

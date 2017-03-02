@@ -173,6 +173,12 @@ content-type@^1.0.0:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/content-type/download/content-type-1.0.2.tgz#b7d113aee7a8dd27bd21133c4dc2529df1721eed"
 
+cookies@~0.5.1:
+  version "0.5.1"
+  resolved "http://registry.npm.taobao.org/cookies/download/cookies-0.5.1.tgz#2560c304fe8f8cbd002e08b9599d2e7479d37298"
+  dependencies:
+    keygrip "~1.0.0"
+
 cookies@~0.6.1:
   version "0.6.2"
   resolved "http://registry.npm.taobao.org/cookies/download/cookies-0.6.2.tgz#6ac1b052895208e8fc4c4f5f86a9ed31b9cb5ccf"
@@ -290,6 +296,16 @@ generic-pool@^2.4.1:
   version "2.5.4"
   resolved "http://registry.npm.taobao.org/generic-pool/download/generic-pool-2.5.4.tgz#38c6188513e14030948ec6e5cf65523d9779299b"
 
+generic-session@^0.1.2:
+  version "0.1.2"
+  resolved "http://registry.npm.taobao.org/generic-session/download/generic-session-0.1.2.tgz#7f1301e41e7d374d14b0ab64c9260e7c9c1e3438"
+  dependencies:
+    cookies "~0.5.1"
+    xtend "~4.0.1"
+  optionalDependencies:
+    keygrip "~1.0.1"
+    lru-cache "~4.0.0"
+
 globals@^9.0.0:
   version "9.16.0"
   resolved "http://registry.npm.taobao.org/globals/download/globals-9.16.0.tgz#63e903658171ec2d9f51b1d31de5e2b8dc01fb80"
@@ -374,7 +390,7 @@ js-tokens@^3.0.0:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/js-tokens/download/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
 
-keygrip@~1.0.1:
+keygrip@~1.0.0, keygrip@~1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/keygrip/download/keygrip-1.0.1.tgz#b02fa4816eef21a8c4b35ca9e52921ffc89a30e9"
 
@@ -491,7 +507,7 @@ lru-cache@2.5.0:
   version "2.5.0"
   resolved "http://registry.npm.taobao.org/lru-cache/download/lru-cache-2.5.0.tgz#d82388ae9c960becbea0c73bb9eb79b6c6ce9aeb"
 
-lru-cache@^4.0.1:
+lru-cache@^4.0.1, lru-cache@~4.0.0:
   version "4.0.2"
   resolved "http://registry.npm.taobao.org/lru-cache/download/lru-cache-4.0.2.tgz#1d17679c069cda5d040991a09dbc2c0db377e55e"
   dependencies:
@@ -709,6 +725,10 @@ util-deprecate@~1.0.1:
 vary@^1.0.0:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/vary/download/vary-1.1.0.tgz#e1e5affbbd16ae768dd2674394b9ad3022653140"
+
+xtend@~4.0.1:
+  version "4.0.1"
+  resolved "http://registry.npm.taobao.org/xtend/download/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
 yallist@^2.0.0:
   version "2.0.0"
